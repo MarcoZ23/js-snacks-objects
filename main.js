@@ -19,3 +19,13 @@ const bike = [
     {nome: "tarmac", peso: 7.5},
     {nome: "trek", peso: 8.5}
 ];
+
+let ligthBike = bike[0]
+
+for (let i = 1; i < bike.length; i++) 
+
+if (ligthBike.peso > bike[i].peso) 
+{   ligthBike = bike[i]
+}
+
+console.log(ligthBike);
