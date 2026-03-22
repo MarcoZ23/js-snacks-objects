@@ -41,12 +41,25 @@ const team = [
 {nome: "inter", puntiFatti: 0, falliSubiti: 0},
 {nome: "napoli", puntiFatti: 0, falliSubiti: 0},
 ] 
-
+const newTeam = [] 
 for (let i = 0; i < team.length; i++) {
     team[i].puntiFatti = Math.floor(Math.random() * 100); 
     team[i].falliSubiti = Math.floor(Math.random() * 100)
-console.log(team[i].puntiFatti, team[i].falliSubiti);
+        console.log(team[i].puntiFatti, team[i].falliSubiti);
+    newTeam.push({nome: team[i].nome, falliSubiti: team[i].falliSubiti})
 }
+
+
+
+    
+    console.log(newTeam);
+
+
+
+
+
+
+
 
 
 
